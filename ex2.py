@@ -24,7 +24,6 @@ def jordan_form(A):
     sp.pprint(A.jordan_form()[1])
 
 if __name__ == '__main__':
-    A = sp.Matrix(
-    [[0, 0, 1, -1, 0, 1], [1, 0, -3, 1, -1, -3], [0, 1, 3, 0, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 1, 0, -3],
-         [0, 0, 0, 0, 1, 3]])
+    #Ввести матрицу
+    A = sp.Matrix(...)
     jordan_form(A)
