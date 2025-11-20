@@ -114,7 +114,8 @@ class Solver:
                 if v0 is None:
                     print(f"   ⚠ Не найден корневой вектор порядка {k}")
                     continue
-
+                print(f"Оператор B= A - λ * I  в степени {k}")
+                sp.pprint(A_shifted ** k)
                 print(f"\n   Корневой вектор v₀ порядка {k}:")
                 print(f"   v₀ = {v0.T}")
 
