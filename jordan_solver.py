@@ -45,6 +45,8 @@ class Solver:
         for val, mult in self.eigenvals.items():
             rho = len((self.matrix - val * self.I).nullspace())
             print(f'   λ = {val}, ρ = {rho}')
+            print("Собственные вектора:")
+            sp.pprint((self.matrix - val * self.I).nullspace())
             rhos.append(rho)
             self._print_step("Жордановы клетки")
             cells_for_eigenval = []
